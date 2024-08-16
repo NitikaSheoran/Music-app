@@ -177,9 +177,39 @@ body{
     font-weight: bold;
 }
 .playbar{
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width:100%;
+    width:70vw;
     background-color: rgb(139,193,139);
     padding:12px;
+}
+.songButtons{
+    display:flex;
+    gap:10px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.songList ul{
+    padding: 0 10px;
+}
+.songList{
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 80px;
+}
+.songList ul li{
+    list-style-type: decimal;
+    display: flex;
+    gap: 34px;
+    cursor: pointer;
+    padding:10px 0;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 12px 0;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+.songList info{
+    font-size: 15px;
 }
